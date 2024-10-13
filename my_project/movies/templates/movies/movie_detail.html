@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ movie.title }}</title>
+</head>
+<body>
+    <h1>{{ movie.title }}</h1>
+    <p>Description: {{ movie.description }}</p>
+    <p>Genres: {{ movie.genres }}</p>
+    <p>Release Date: {{ movie.release_date }}</p>
+    <a href="{% url 'movie_detail' movie.id %}">Back to Movie List</a>
+</body>
+</html>
